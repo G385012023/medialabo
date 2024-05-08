@@ -1,10 +1,14 @@
-世界の天気（検索結果1件）
-coord.lon: 116.3972
-coord.lat: 39.9075
-weather[0].description: 曇りがち
-main.temp_min: 9.94
-main.temp_max: 9.94
-main.humidity: 14
-wind.speed: 2.65
-wind.deg: 197
-name: 北京市
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>世界の天気</title>
+</head>
+<body>
+    <form action="cgi-bin/example.cgi" method="post">
+        <p>検索したいキーワードを入力してください。</p>
+        <input type="search" name="search" placeholder="キーワードを入力">
+        <input type="submit" name="submit" value="検索">
+      </form>
+</body>
+</html>
+

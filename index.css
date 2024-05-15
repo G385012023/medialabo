@@ -1,31 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  h2 {
-    color: #555;
-  }
-  
-  h3 {
-    color: #777;
-  }
-  
-  p {
-    color: #333;
-  }
-  
-  a {
-    color: blue;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+h3 {
+  color: #777;
+}
+
+p {
+  color: #333;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom, #f0f0f0, #ddd);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}

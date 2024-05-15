@@ -1,39 +1,42 @@
+
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
-  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
+
 
 h1 {
   color: #333;
+  text-align: center;
+  margin-top: 20px;
 }
 
 h2 {
-  color: #555;
+  color: #666;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 20px;
 }
 
 h3 {
-  color: #777;
+  color: #999;
+  margin-top: 15px;
 }
-
 p {
-  color: #333;
+  color: #444;
+  line-height: 1.5;
 }
 
 a {
-  color: blue;
+  color: #007bff;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
-
-.gradient-bg {
-  background: linear-gradient(to bottom, #f0f0f0, #ddd);
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+body {
+  background: linear-gradient(to bottom, #ffffff, #f5f5f5);
 }

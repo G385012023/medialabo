@@ -17,10 +17,22 @@ let data = [
 let h2 = document.querySelector('h2#ex42'); //h2のex42場所指定
 let p = document.createElement('p'); //pをつくる
 p.textContent = '写真表と都市の緯度軽度のページです'; //pの内容
+p.setAttribute('style','text-emphasis: sesame green;');
 h2.insertAdjacentElement('afterend', p); //
 // 練習4-3 写真表作成プログラム
+let h22 = document.querySelector('div#phototable');
 
+let p2 = document.createElement('p');
+p2.setAttribute('src','taro.png');
+h22.insertAdjacentElement('before', p2);
 
+let p21 = document.createElement('p');
+p21.setAttribute('src','jiro.png');
+h22.insertAdjacentElement('before', p21);
+
+let p22 = document.createElement('p');
+p22.setAttribute('src','hanako.png');
+h22.insertAdjacentElement('before', p22);
 // 練習4-4 箇条書き削除プログラム
 
 

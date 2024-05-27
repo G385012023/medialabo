@@ -24,6 +24,7 @@ function hantei() {
     if(kotae === yoso && kaisu<=3){
     kaisu = kaisu + 1;
     console.log( '正解です．おめでとう!');
+    console.log(kaisu+'回目の予想：'+ yoso)
     }
 
     else if ( kotae>yoso && kaisu<3){
@@ -32,12 +33,12 @@ function hantei() {
 
     }
 
-    else if (kotae ===!yoso && kotae<yoso && kaisu<3){
+    else if (kotae !==yoso && kotae<yoso && kaisu<3){
       kaisu = kaisu + 1;
       console.log('まちがい．答えはもっと小さいですよ');
     }
 
-    else if(kaisu===3 && kotae ===! yoso){
+    else if(kaisu===3 && kotae !==yoso){
       kaisu = kaisu + 1;
       console.log ('まちがい．残念でした答えは'+ kotae +'です．');
     }

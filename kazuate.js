@@ -1,4 +1,4 @@
-l// 答え
+// 答え
 let kotae = Math.floor(Math.random()*10) + 1;
 console.log('答え（デバッグ用）: ' + kotae);
 
@@ -19,20 +19,31 @@ function hantei() {
   let yoso = 4;
   
   // 課題3-1: 正解判定する
-  if(yoso === kotae){
-    console.log('正解です．おめでとう!');
-    kaisu = kaisu + 1;
-  }
   // kotae と yoso が一致するかどうか調べて結果を出力
-  if(kotae ===!yoso){
-    if(kotae>yoso){
+   // 課題3-1における出力先はコンソール
+    if(kotae === yoso && kaisu<=3){
     kaisu = kaisu + 1;
-    console.log('まちがい．答えはもっと小さいですよ');
+    console.log( '正解です．おめでとう!');
     }
-    else{
-    kaisu = kaisu + 1;
-    console.log('まちがい．答えはもっと大きいですよ');
+
+    else if ( kotae>yoso && kaisu<3){
+
+      console.log( 'まちがい．答えはもっと大きいですよ');
+
     }
-  }
-  // 課題3-1における出力先はコンソール
+
+    else if (kotae ===!yoso && kotae<yoso && kaisu<3){
+      kaisu = kaisu + 1;
+      console.log('まちがい．答えはもっと小さいですよ');
+    }
+
+    else if(kaisu===3 && kotae ===! yoso){
+      kaisu = kaisu + 1;
+      console.log ('まちがい．残念でした答えは'+ kotae +'です．');
+    }
+
+    else if(kaisu >= 4){
+      kaisu = kaisu + 1;
+      console.log('答えは'+kotae+'でした．すでにゲームは終わっています');
+    }
 }

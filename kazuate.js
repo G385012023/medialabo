@@ -11,11 +11,7 @@ let kaisu = 0;
 hantei();
 hantei();
 hantei();
-hantei();
-hantei();
-hantei();
-hantei();
-hantei();
+hantei(); 
 
 
 // ボタンを押した後の処理をする関数 hantei() の定義

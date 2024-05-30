@@ -29,13 +29,13 @@ p1.insertAdjacentElement('beforeend',img1);
 h22.insertAdjacentElement('beforeend',p1);
 
 let img2 = document.createElement('img');
-img1.setAttribute('src','jiro.png');
+img2.setAttribute('src','jiro.png');
 let p2 = document.createElement('p');
 p2.insertAdjacentElement('beforeend',img2);
 h22.insertAdjacentElement('beforeend',p2);
 
 let img3 = document.createElement('img');
-img1.setAttribute('src','hanako.png');
+img3.setAttribute('src','hanako.png');
 let p3 = document.createElement('p');
 p3.insertAdjacentElement('beforeend',img3);
 h22.insertAdjacentElement('beforeend',p3);

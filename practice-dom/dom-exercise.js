@@ -22,17 +22,18 @@ h2.insertAdjacentElement('afterend', p); //
 // 練習4-3 写真表作成プログラム
 let h22 = document.querySelector('div#phototable');
 
-let p2 = document.createElement('p');
-p2.setAttribute('src','taro.png');
-h22.insertAdjacentElement('beforeend', p2);
+let img1 = document.createElement('img');
+img1.setAttribute('src','taro.png');
+let p1 = document.createElement('p');
+h22.insertAdjacentElement('beforeend', p1);
 
-let p21 = document.createElement('p');
-p21.setAttribute('src','jiro.png');
-h22.insertAdjacentElement('beforeend', p21);
+let img2 = document.createElement('img');
+img2.setAttribute('src','jiro.png');
+h22.insertAdjacentElement('beforeend', p1);
 
-let p22 = document.createElement('p');
-p22.setAttribute('src','hanako.png');
-h22.insertAdjacentElement('beforeend', p22);
+let img3 = document.createElement('img');
+img3.setAttribute('src','hanako.png');
+h22.insertAdjacentElement('beforeend', p1);
 // 練習4-4 箇条書き削除プログラム
 
 

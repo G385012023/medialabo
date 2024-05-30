@@ -20,12 +20,12 @@ p.textContent = '写真表と都市の緯度軽度のページです'; //pの内
 p.setAttribute('style','text-emphasis: sesame green;');
 h2.insertAdjacentElement('afterend', p); //
 // 練習4-3 写真表作成プログラム
-/*let h22 = document.querySelector('div#phototable');
+let h22 = document.querySelector('div#phototable');
 let img1 = document.createElement('img');
 img1.setAttribute('src','taro.png');
 let p1 = document.createElement('p');
 p1.insertAdjacentElement('beforeend',img1);
-h22.insertAdjacentElement('beforeend',p1);*/
+h22.insertAdjacentElement('beforeend',p1);
 // 練習4-4 箇条書き削除プログラム
 
 

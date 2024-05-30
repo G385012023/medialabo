@@ -24,15 +24,15 @@ let h22 = document.querySelector('div#phototable');
 
 let p2 = document.createElement('p');
 p2.setAttribute('src','taro.png');
-h22.insertAdjacentElement('before', p2);
+h22.insertAdjacentElement('beforeend', p2);
 
 let p21 = document.createElement('p');
 p21.setAttribute('src','jiro.png');
-h22.insertAdjacentElement('before', p21);
+h22.insertAdjacentElement('beforeend', p21);
 
 let p22 = document.createElement('p');
 p22.setAttribute('src','hanako.png');
-h22.insertAdjacentElement('before', p22);
+h22.insertAdjacentElement('beforeend', p22);
 // 練習4-4 箇条書き削除プログラム
 
 

@@ -36,7 +36,7 @@ img3.setAttribute('src','hanako.png');
 h22.insertAdjacentElement('beforeend', p1);*/
 // 練習4-4 箇条書き削除プログラム
 
-let h23 = document.querySelector('ul#location');
+let h23 = document.querySelectorAll('ul#location > li');
 h23.remove();
 // 練習4-5 箇条書き追加プログラム
 

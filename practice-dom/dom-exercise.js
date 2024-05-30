@@ -40,8 +40,7 @@ let p3 = document.createElement('p');
 p3.insertAdjacentElement('beforeend',img3);
 h22.insertAdjacentElement('beforeend',p3);
 // 練習4-4 箇条書き削除プログラム
-// ul要素内の全てのli要素を取得します
-let list = document.querySelectorAll('ul#list > li');
+let list = document.querySelectorAll('ul#location > li');
 for (let li  of list) {
     li.remove();
 }

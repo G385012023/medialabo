@@ -40,6 +40,10 @@ let p3 = document.createElement('p');
 p3.insertAdjacentElement('beforeend',img3);
 h22.insertAdjacentElement('beforeend',p3);
 // 練習4-4 箇条書き削除プログラム
+let h23 = document.querySelectorAll('ul#locaation');
+for (const element of h23){
+    element.remove();
+}
 
 
 // 練習4-5 箇条書き追加プログラム

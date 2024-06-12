@@ -10,7 +10,7 @@ function hantei() {
   let inputElement = document.querySelector('#yoso');
   let yoso = Number(inputElement.value);
 
-  // 課題3-1: 正解判定する
+  // 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   kaisu += 1;
 

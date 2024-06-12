@@ -1,8 +1,5 @@
 // 答え
 let kotae = Math.floor(Math.random() * 10) + 1;
-let debugElement = document.querySelector('#debug');
-debugElement.textContent = '答え（デバッグ用）: ' + kotae;
-console.log('答え（デバッグ用）: ' + kotae); // コンソールにデバッグ用の答えを出力
 
 // 入力回数（予想回数）
 let kaisu = 0;
@@ -38,3 +35,4 @@ function hantei() {
 }
 
 document.querySelector('#submit').addEventListener('click', hantei);
+

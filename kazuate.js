@@ -14,14 +14,7 @@ function hantei() {
   // kotae と yoso が一致するかどうか調べて結果を出力
   kaisu += 1;
 
-  let resultElement = document.querySelector('#result');
   let feedbackElement = document.querySelector('#feedback');
-
-  if (kaisu <= 3) {
-    resultElement.textContent = kaisu + '回目の予想: ' + yoso;
-  } else {
-    resultElement.textContent = '';
-  }
 
   if (kotae === yoso && kaisu <= 3) {
     feedbackElement.textContent = '正解です．おめでとう!';

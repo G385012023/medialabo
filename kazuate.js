@@ -13,11 +13,10 @@ function hantei() {
 
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
-  kaisu = kaisu + 1;
+  kaisu += 1;
 
   let kaisuElement = document.querySelector('#kaisu');
   let answerElement = document.querySelector('#answer');
-  let resultElement = document.querySelector('#result');
   let feedbackElement = document.querySelector('#feedback');
 
   kaisuElement.textContent = kaisu + '回目の予想:';

@@ -14,16 +14,13 @@ function hantei() {
   // kotae と yoso が一致するかどうか調べて結果を出力
   kaisu += 1;
 
-  let kaisuElement = document.querySelector('#kaisu');
-  let answerElement = document.querySelector('#answer');
+  let resultElement = document.querySelector('#result');
   let feedbackElement = document.querySelector('#feedback');
 
   if (kaisu <= 3) {
-    kaisuElement.textContent = kaisu + '回目の予想:';
-    answerElement.textContent = yoso;
+    resultElement.textContent = kaisu + '回目の予想: ' + yoso;
   } else {
-    kaisuElement.textContent = '';
-    answerElement.textContent = '';
+    resultElement.textContent = '';
   }
 
   if (kotae === yoso && kaisu <= 3) {
@@ -43,7 +40,3 @@ function hantei() {
 }
 
 document.querySelector('#submit').addEventListener('click', hantei);
-
-
-
-

@@ -7,16 +7,17 @@ let kaisu = 0;
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
-  // テキストボックスに指定された数値を yoso に代入する
-  let yoso = Number(document.getElementById('yoso').value);
+  // テキストボックスを取得してその値を yoso に代入する
+  let inputElement = document.querySelector('#yoso');
+  let yoso = Number(inputElement.value);
 
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   kaisu = kaisu + 1;
 
-  let kaisuElement = document.getElementById('kaisu');
-  let answerElement = document.getElementById('answer');
-  let resultElement = document.getElementById('result');
+  let kaisuElement = document.querySelector('#kaisu');
+  let answerElement = document.querySelector('#answer');
+  let resultElement = document.querySelector('#result');
 
   kaisuElement.textContent = kaisu + '回目の予想:';
   answerElement.textContent = yoso;
@@ -34,4 +35,4 @@ function hantei() {
   }
 }
 
-document.getElementById('submit').addEventListener('click', hantei);
+document.querySelector('#submit').addEventListener('click', hantei);

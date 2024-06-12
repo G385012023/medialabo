@@ -47,3 +47,8 @@ function hantei() {
       console.log('答えは'+kotae+'でした．すでにゲームは終わっています');
     }
 }
+
+let k = document.querySelectorAll('span#kaisu');
+let a = document.querySelectorAll('span#answer'); 
+let p1 = document.createElement('p');
+let p2 = document.createElement('p'); 

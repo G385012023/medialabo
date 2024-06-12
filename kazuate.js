@@ -27,9 +27,6 @@ function hantei() {
   } else if (kaisu >= 4) {
     feedbackElement.textContent = '答えは' + kotae + 'でした．すでにゲームは終わっています';
   }
-
-  // コンソールにデバッグ用の答えを表示する
-  console.log('答え（デバッグ用）: ' + kotae);
 }
 
 document.querySelector('#submit').addEventListener('click', hantei);

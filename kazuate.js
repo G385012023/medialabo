@@ -26,9 +26,7 @@ function hantei() {
     feedbackElement.textContent = 'まちがい．残念でした答えは' + kotae + 'です．';
   } else if (kaisu >= 4) {
     feedbackElement.textContent = '答えは' + kotae + 'でした．すでにゲームは終わっています';
-  }
-
-  // コンソールにデバッグ用の答えを表示する
+  }s
   console.log('答え（デバッグ用）: ' + kotae);
 }
 

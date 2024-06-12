@@ -4,41 +4,13 @@ document.querySelector('#search-button').addEventListener('click', function() {
 });
 
 function fetchWeatherData(cityId) {
-  // 本来はここでAPIリクエストを行うが、ここではローカルのデータを使用
-  let data = {
-      "coord": { "lon": 139.6917, "lat": 35.6895 },
-      "weather": [
-          { "id": 800, "main": "Clear", "description": "晴れ", "icon": "01d" }
-      ],
-      "base": "stations",
-      "main": {
-          "temp": 15.0,
-          "feels_like": 14.5,
-          "temp_min": 15.0,
-          "temp_max": 15.0,
-          "pressure": 1016,
-          "humidity": 72,
-          "sea_level": 1016,
-          "grnd_level": 1012
-      },
-      "visibility": 10000,
-      "wind": { "speed": 3.6, "deg": 180 },
-      "clouds": { "all": 0 },
-      "dt": 1625214000,
-      "sys": {
-          "type": 1,
-          "id": 8074,
-          "country": "JP",
-          "sunrise": 1625184000,
-          "sunset": 1625234400
-      },
-      "timezone": 32400,
-      "id": 1850147,
-      "name": "Tokyo",
-      "cod": 200
-  };
+  // 実際のAPIリクエストを行う
+  let url = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=YOUR_API_KEY&lang=ja&units=metric`;
 
-  displayWeatherData(data);
+  fetch(url)
+      .then(response => response.json())
+      .then(data => displayWeatherData(data))
+      .catch(error => console.error('Error:', error));
 }
 
 function displayWeatherData(data) {

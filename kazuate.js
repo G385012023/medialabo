@@ -4,7 +4,9 @@ let kotae = Math.floor(Math.random() * 10) + 1;
 // 入力回数（予想回数）
 let kaisu = 0;
 
-// ボタンを押した後の処理をする関数 hantei() の定義
+// 初回の0回目の予想を表示
+document.querySelector('#result').textContent = kaisu + '回目の予想:';
+
 function hantei() {
   // テキストボックスを取得してその値を yoso に代入する
   let inputElement = document.querySelector('#yoso');

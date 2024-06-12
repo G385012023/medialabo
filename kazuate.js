@@ -18,8 +18,13 @@ function hantei() {
   let answerElement = document.querySelector('#answer');
   let feedbackElement = document.querySelector('#feedback');
 
-  kaisuElement.textContent = kaisu + '回目の予想:';
-  answerElement.textContent = yoso;
+  if (kaisu <= 3) {
+    kaisuElement.textContent = kaisu + '回目の予想:';
+    answerElement.textContent = yoso;
+  } else {
+    kaisuElement.textContent = '';
+    answerElement.textContent = '';
+  }
 
   if (kotae === yoso && kaisu <= 3) {
     feedbackElement.textContent = '正解です．おめでとう!';
@@ -38,6 +43,7 @@ function hantei() {
 }
 
 document.querySelector('#submit').addEventListener('click', hantei);
+
 
 
 

@@ -45,5 +45,19 @@ let data = {
   "cod": 200
 };
 
-////////// 課題3-2 ここからプログラムを書こう
+// 課題3-2 ここからプログラムを書こう
 
+// データをHTMLに表示する関数を定義
+function displayWeatherData(data) {
+  let resultDiv = document.getElementById('result');
+  resultDiv.innerHTML = `
+    <h2>天気情報</h2>
+    <p><strong>都市:</strong> ${data.name}</p>
+    <p><strong>温度:</strong> ${data.main.temp} °C</p>
+    <p><strong>天気:</strong> ${data.weather[0].description}</p>
+    <p><strong>湿度:</strong> ${data.main.humidity} %</p>
+    <p><strong>風速:</strong> ${data.wind.speed} m/s</p>
+  `;
+}
+
+displayWeatherData(data);

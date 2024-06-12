@@ -14,7 +14,17 @@ function hantei() {
   // kotae と yoso が一致するかどうか調べて結果を出力
   kaisu += 1;
 
+  let kaisuElement = document.querySelector('#kaisu');
+  let answerElement = document.querySelector('#answer');
   let feedbackElement = document.querySelector('#feedback');
+
+  if (kaisu <= 3) {
+    kaisuElement.textContent = kaisu;
+    answerElement.textContent = yoso;
+  } else {
+    kaisuElement.textContent = '';
+    answerElement.textContent = '';
+  }
 
   if (kotae === yoso && kaisu <= 3) {
     feedbackElement.textContent = '正解です．おめでとう!';
@@ -26,7 +36,9 @@ function hantei() {
     feedbackElement.textContent = 'まちがい．残念でした答えは' + kotae + 'です．';
   } else if (kaisu >= 4) {
     feedbackElement.textContent = '答えは' + kotae + 'でした．すでにゲームは終わっています';
-  }s
+  }
+
+  // コンソールにデバッグ用の答えを表示する
   console.log('答え（デバッグ用）: ' + kotae);
 }
 

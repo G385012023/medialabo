@@ -65,11 +65,9 @@ function fetchWeatherData(cityId) {
 function displayWeatherData(data) {
   let resultDiv = document.querySelector('#result');
   resultDiv.innerHTML = `
-      <h2>天気情報</h2>
       <p><strong>都市:</strong> ${data.name}</p>
       <p><strong>温度:</strong> ${data.main.temp} °C</p>
       <p><strong>天気:</strong> ${data.weather[0].description}</p>
       <p><strong>湿度:</strong> ${data.main.humidity} %</p>
-      <p><strong>風速:</strong> ${data.wind.speed} m/s</p>
-  `;
+      <p><strong>風速:</strong> ${data.wind.speed} m/s</p>`;
 }

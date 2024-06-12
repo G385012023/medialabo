@@ -1,5 +1,7 @@
 // 答え
 let kotae = Math.floor(Math.random() * 10) + 1;
+let debugElement = document.querySelector('#debug');
+debugElement.textContent = '答え（デバッグ用）: ' + kotae;
 
 // 入力回数（予想回数）
 let kaisu = 0;
@@ -10,7 +12,7 @@ function hantei() {
   let inputElement = document.querySelector('#yoso');
   let yoso = Number(inputElement.value);
 
-  // 正解判定する
+  // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   kaisu += 1;
 
@@ -32,12 +34,10 @@ function hantei() {
   } else if (kaisu >= 4) {
     feedbackElement.textContent = '答えは' + kotae + 'でした．すでにゲームは終わっています';
   }
-
-
-  console.log('答え（デバッグ用）: ' + kotae);
 }
 
 document.querySelector('#submit').addEventListener('click', hantei);
+
 
 
 

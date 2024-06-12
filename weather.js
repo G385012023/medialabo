@@ -4,6 +4,7 @@ document.querySelector('#search-button').addEventListener('click', function() {
 });
 
 function fetchWeatherData(cityId) {
+  // 本来はここでAPIリクエストを行うが、ここではローカルのデータを使用
   let data = {
       "coord": { "lon": 139.6917, "lat": 35.6895 },
       "weather": [

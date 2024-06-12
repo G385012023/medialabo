@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Project</title>
+    <title>Weather Search</title>
 </head>
 <body>
+    <h1>天気の検索</h1>
+    <label for="city-select">検索する国の都市を選んでください</label>
+    <select id="city-select">
+        <option value="360630">Cairo カイロ (エジプト)</option>
+        <option value="524901">Moscow モスクワ (ロシア)</option>
+        <option value="993800">Johannesburg ヨハネスブルク (南アフリカ)</option>
+        <option value="1816670">Beijing 北京 (中華人民共和国)</option>
+        <option value="1850147">Tokyo 東京 (日本)</option>
+        <option value="1880252">Singapore シンガポール</option>
+        <option value="2147714">Sydney シドニー (オーストラリア)</option>
+        <option value="2643743">London ロンドン (イギリス)</option>
+        <option value="2968815">Paris パリ (フランス)</option>
+        <option value="3451190">Rio de Janeiro リオデジャネイロ (ブラジル)</option>
+        <option value="5128581">New York ニューヨーク (アメリカ合衆国)</option>
+        <option value="5368361">Los Angeles ロサンゼルス (アメリカ合衆国)</option>
+    </select>
+    <button id="search-button">検索</button>
+
     <div id="result"></div>
+
     <script src="weather.js"></script>
 </body>
 </html>
-

@@ -35,4 +35,3 @@ function hantei() {
 }
 
 document.getElementById('submit').addEventListener('click', hantei);
-

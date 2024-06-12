@@ -1,6 +1,5 @@
 // 答え
 let kotae = Math.floor(Math.random() * 10) + 1;
-console.log('答え（デバッグ用）: ' + kotae);
 
 // 入力回数（予想回数）
 let kaisu = 0;
@@ -11,7 +10,7 @@ function hantei() {
   let inputElement = document.querySelector('#yoso');
   let yoso = Number(inputElement.value);
 
-  // 課題3-1: 正解判定する
+  // 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   kaisu += 1;
 

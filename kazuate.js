@@ -18,20 +18,21 @@ function hantei() {
   let kaisuElement = document.querySelector('#kaisu');
   let answerElement = document.querySelector('#answer');
   let resultElement = document.querySelector('#result');
+  let feedbackElement = document.querySelector('#feedback');
 
   kaisuElement.textContent = kaisu + '回目の予想:';
   answerElement.textContent = yoso;
 
   if (kotae === yoso && kaisu <= 3) {
-    resultElement.textContent = '正解です．おめでとう!';
+    feedbackElement.textContent = '正解です．おめでとう!';
   } else if (kotae > yoso && kaisu < 3) {
-    resultElement.textContent = 'まちがい．答えはもっと大きいですよ';
+    feedbackElement.textContent = 'まちがい．答えはもっと大きいですよ';
   } else if (kotae < yoso && kaisu < 3) {
-    resultElement.textContent = 'まちがい．答えはもっと小さいですよ';
+    feedbackElement.textContent = 'まちがい．答えはもっと小さいですよ';
   } else if (kaisu === 3 && kotae !== yoso) {
-    resultElement.textContent = 'まちがい．残念でした答えは' + kotae + 'です．';
+    feedbackElement.textContent = 'まちがい．残念でした答えは' + kotae + 'です．';
   } else if (kaisu >= 4) {
-    resultElement.textContent = '答えは' + kotae + 'でした．すでにゲームは終わっています';
+    feedbackElement.textContent = '答えは' + kotae + 'でした．すでにゲームは終わっています';
   }
 }
 

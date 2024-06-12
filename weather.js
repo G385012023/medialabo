@@ -1,31 +1,9 @@
-const cityData = {
-  "Cairo": 360630,
-  "Moscow": 524901,
-  "Johannesburg": 993800,
-  "Beijing": 1816670,
-  "Tokyo": 1850147,
-  "Singapore": 1880252,
-  "Sydney": 2147714,
-  "London": 2643743,
-  "Paris": 2968815,
-  "Rio de Janeiro": 3451190,
-  "New York": 5128581,
-  "Los Angeles": 5368361
-};
-
 document.querySelector('#search-button').addEventListener('click', function() {
-  let cityName = document.querySelector('#city-search').value;
-  let cityId = cityData[cityName];
-  
-  if (cityId) {
-      fetchWeatherData(cityId);
-  } else {
-      alert("入力された都市は見つかりません。");
-  }
+  let cityId = document.querySelector('#city-select').value;
+  fetchWeatherData(cityId);
 });
 
 function fetchWeatherData(cityId) {
-  // 本来はここでAPIリクエストを行うが、ここではローカルのデータを使用
   let data = {
       "coord": { "lon": 139.6917, "lat": 35.6895 },
       "weather": [
@@ -69,5 +47,6 @@ function displayWeatherData(data) {
       <p><strong>温度:</strong> ${data.main.temp} °C</p>
       <p><strong>天気:</strong> ${data.weather[0].description}</p>
       <p><strong>湿度:</strong> ${data.main.humidity} %</p>
-      <p><strong>風速:</strong> ${data.wind.speed} m/s</p>`;
+      <p><strong>風速:</strong> ${data.wind.speed} m/s</p>
+  `;
 }

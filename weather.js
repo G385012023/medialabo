@@ -8,7 +8,7 @@ const cityData = {
   "Australia": { "name": "Sydney", "temp": 22, "weather": "曇り", "humidity": 65, "wind": 6 },
   "United Kingdom": { "name": "London", "temp": 10, "weather": "雨", "humidity": 85, "wind": 8 },
   "France": { "name": "Paris", "temp": 18, "weather": "晴れ", "humidity": 55, "wind": 5 },
-  "Brazil": { "name": "Rio de Janeiro", "temp": 35, "weather": "晴れ", "humidity": 45, "wind": 3 },
+  "Brazil": { "name": "Brasília", "temp": 35, "weather": "晴れ", "humidity": 45, "wind": 3 },
   "United States": { "name": "Washington D.C.", "temp": 12, "weather": "曇り", "humidity": 60, "wind": 7 }
 };
 

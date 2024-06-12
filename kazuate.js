@@ -29,5 +29,15 @@ function hantei() {
     feedbackElement.textContent = 'まちがい．答えはもっと小さいですよ';
     console.log('まちがい．答えはもっと小さいですよ');
   } else if (kaisu === 3 && kotae !== yoso) {
-    feedbackElement.textContent = 'まちがい．残念でした答えは'}
+    feedbackElement.textContent = '残念でした。答えは' + kotae + 'です。';
+    console.log('残念でした。答えは' + kotae + 'です。');
+  } else if (kaisu >= 4) {
+    feedbackElement.textContent = '答えは' + kotae + 'でした。すでにゲームは終わっています';
+    console.log(kaisu + '回目の予想: 答えは' + kotae + 'でした。すでにゲームは終わっています。');
+  }
+
+  // コンソールにデバッグ用の答えを表示する
+  console.log('答え（デバッグ用）: ' + kotae);
 }
+
+document.querySelector('#submit').addEventListener('click', hantei);

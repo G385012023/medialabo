@@ -18,7 +18,7 @@ function hantei() {
   let feedbackElement = document.querySelector('#feedback');
 
   if (kaisu <= 3) {
-    resultElement.textContent = kaisu + yoso;
+    resultElement.textContent = kaisu + '回目の予想: ' + yoso;
   } else {
     resultElement.textContent = '';
   }
